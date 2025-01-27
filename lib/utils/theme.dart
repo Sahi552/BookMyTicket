@@ -27,4 +27,10 @@ class AppTheme {
     color: footerColor,
     fontWeight: FontWeight.w400,
   );
+
+  static TextStyle eventText = TextStyle(
+    fontSize: 14,
+    color: headingColor,
+    fontWeight: FontWeight.w500,
+  );
 }

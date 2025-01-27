@@ -1,6 +1,7 @@
 import 'package:bookmyticket/utils/theme.dart';
 import 'package:bookmyticket/view/widgets/appbar.dart';
 import 'package:bookmyticket/view/widgets/event.dart';
+import 'package:bookmyticket/view/widgets/popular_event.dart';
 import 'package:bookmyticket/view/widgets/template.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +38,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Text(
               "Popular Events",
               style: AppTheme.heading,
-            )
+            ),
+            SizedBox(height: 20),
+            PopularEvent()
           ],
         ),
       ),

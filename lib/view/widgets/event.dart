@@ -13,6 +13,7 @@ class Event extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         spacing: 10,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Events(
             eventImage: Assest.event1,

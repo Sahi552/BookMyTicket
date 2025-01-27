@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   //colors
-  static Color backGroundColor = Color.fromARGB(255, 238, 200, 180);
+  static Color backGroundColor = Color.fromARGB(255, 241, 206, 187);
   static Color groundColor = Color(0xFFF8B797);
   static Color iconBoxColor = Color(0xFFFF8A50);
   static Color footerColor = Color(0xFFFC8019);

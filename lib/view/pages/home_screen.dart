@@ -1,7 +1,10 @@
 import 'package:bookmyticket/utils/theme.dart';
 import 'package:bookmyticket/view/widgets/appbar.dart';
 import 'package:bookmyticket/view/widgets/event.dart';
+import 'package:bookmyticket/view/widgets/expand.dart';
+import 'package:bookmyticket/view/widgets/freeevent.dart';
 import 'package:bookmyticket/view/widgets/popular_event.dart';
+import 'package:bookmyticket/view/widgets/premium_container.dart';
 import 'package:bookmyticket/view/widgets/template.dart';
 import 'package:flutter/material.dart';
 
@@ -35,12 +38,14 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 20),
             Event(),
             SizedBox(height: 20),
-            Text(
-              "Popular Events",
-              style: AppTheme.heading,
-            ),
+            Expand(event: "Popular Event", expand: () {}),
             SizedBox(height: 20),
-            PopularEvent()
+            PopularEvent(),
+            SizedBox(height: 20),
+            PremiumContainer(),
+            SizedBox(height: 20),
+            Expand(event: "Free entry Event", expand: () {}),
+            Freeevent(),
           ],
         ),
       ),

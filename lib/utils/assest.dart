@@ -18,4 +18,12 @@ class Assest {
   static String popevent1 = "$home/pop_event1.png";
   static String popevent2 = "$home/pop_event2.png";
   static String popevent3 = "$home/pop_event3.png";
+
+  //premium
+  static String premium = "$home/premium.png";
+
+  //free events
+  static String freeevent1 = "$home/free_event1.png";
+  static String freeevent2 = "$home/free_event2.png";
+  static String freeevent3 = "$home/free_event3.png";
 }

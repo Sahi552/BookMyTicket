@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 import 'package:bookmyticket/utils/assest.dart';
@@ -11,37 +10,48 @@ class Event extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      child: Row(
-        spacing: 10,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Events(
-            eventImage: Assest.event1,
-            eventText: "Comedy \nshows",
-            gratient1: Color(0xff9747FF),
-            gratient2: Color(0xffAD6FA6),
-            gratient3: Color(0xffC67D93),
-            offset: Offset(-5, -23),
-          ),
-          Events(
-            eventImage: Assest.event2,
-            eventText: "Music \nconcert",
-            gratient1: Color(0xff40D169),
-            gratient2: Color(0xff6FADA7),
-            gratient3: Color(0xff8FDDD0),
-            offset: Offset(3, -16),
-          ),
-          Events(
-            eventImage: Assest.event3_2,
-            eventText: "DJ \nnights",
-            gratient1: Color(0xff9747FF),
-            gratient2: Color(0xffAD6FA6),
-            gratient3: Color(0xffC67D93),
-            offset: Offset(3, -23),
-            eventoptional: true,
-            optional: Assest.event3_1,
-          ),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Row(
+          spacing: 10,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Events(
+              eventImage: Assest.event1,
+              eventText: "Comedy \nshows",
+              gratient1: Color(0xff9747FF),
+              gratient2: Color(0xffAD6FA6),
+              gratient3: Color(0xffC67D93),
+              offset: Offset(-5, -23),
+            ),
+            Events(
+              eventImage: Assest.event2,
+              eventText: "Music \nconcert",
+              gratient1: Color(0xff40D169),
+              gratient2: Color(0xff6FADA7),
+              gratient3: Color(0xff8FDDD0),
+              offset: Offset(3, -16),
+            ),
+            Events(
+              eventImage: Assest.event3_2,
+              eventText: "DJ \nnights",
+              gratient1: Color(0xff9747FF),
+              gratient2: Color(0xffAD6FA6),
+              gratient3: Color(0xffC67D93),
+              offset: Offset(3, -23),
+              eventoptional: true,
+              optional: Assest.event3_1,
+            ),
+            Events(
+              eventImage: Assest.event2,
+              eventText: "Music \nconcert",
+              gratient1: Color(0xff40D169),
+              gratient2: Color(0xff6FADA7),
+              gratient3: Color(0xff8FDDD0),
+              offset: Offset(3, -16),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -70,6 +80,7 @@ class Events extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Stack(
           fit: StackFit.loose,

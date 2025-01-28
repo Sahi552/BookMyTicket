@@ -27,7 +27,7 @@ class PopularEvent extends StatelessWidget {
             date: 20,
           ),
           PopEvents(
-            image: Assest.popevent3,
+            image: Assest.popevent1,
             area: "Bangalore karnataka \nconcert",
             concert: "Comedy KA 24",
             month: "Jan",

@@ -1,4 +1,4 @@
-import 'package:bookmyticket/view/pages/live_event.dart';
+import 'package:bookmyticket/view/pages/bottamnavbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: LiveEvent(),
+      home: Bottamnavbar(),
     );
   }
 }

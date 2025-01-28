@@ -29,7 +29,7 @@ class AppTheme {
   );
 
   static TextStyle eventText = TextStyle(
-    fontSize: 14,
+    fontSize: 20,
     color: headingColor,
     fontWeight: FontWeight.w500,
   );

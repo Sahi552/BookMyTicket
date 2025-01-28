@@ -65,7 +65,7 @@ class PopEvents extends StatelessWidget {
         ),
         Text(
           concert,
-          style: AppTheme.heading,
+          style: AppTheme.heading.copyWith(fontSize: 19),
         ),
         Text(
           area,

@@ -13,11 +13,26 @@ class Freeevent extends StatelessWidget {
         spacing: 10,
         children: [
           PopEvents(
-              image: Assest.freeevent1,
-              concert: "workshop",
-              area: "Bangalore, karnataka",
-              month: "Jan",
-              date: 29)
+            image: Assest.freeevent1,
+            concert: "workshop",
+            area: "Bangalore, karnataka",
+            month: "Jan",
+            date: 29,
+          ),
+          PopEvents(
+            image: Assest.freeevent2,
+            concert: "Business ",
+            area: "Bangalore, karnataka",
+            month: "feb",
+            date: 23,
+          ),
+          PopEvents(
+            image: Assest.freeevent3,
+            concert: "Hactive",
+            area: "Bangalore, karnataka",
+            month: "feb",
+            date: 23,
+          )
         ],
       ),
     );

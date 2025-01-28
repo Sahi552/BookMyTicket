@@ -1,4 +1,4 @@
-import 'package:bookmyticket/view/pages/home_screen.dart';
+import 'package:bookmyticket/view/pages/live_event.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: HomeScreen(),
+      home: LiveEvent(),
     );
   }
 }

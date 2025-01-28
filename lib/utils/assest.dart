@@ -26,4 +26,17 @@ class Assest {
   static String freeevent1 = "$home/free_event1.png";
   static String freeevent2 = "$home/free_event2.png";
   static String freeevent3 = "$home/free_event3.png";
+
+  //watched events
+  static String watchedevent1 = "$home/watched1.png";
+  static String watchedevent2 = "$home/watched2.png";
+  static String watchedevent3 = "$home/watched3.png";
+
+  //end
+  static String end = "$home/end.png";
+
+  //secondary Live events
+  static String liveevent1 = "$home/secliveevent1.png";
+  static String liveevent2 = "$home/secliveevent2.png";
+  static String liveevent3 = "$home/secliveevent3.png";
 }

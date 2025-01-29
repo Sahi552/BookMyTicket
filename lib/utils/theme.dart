@@ -16,6 +16,12 @@ class AppTheme {
     fontWeight: FontWeight.w500,
   );
 
+  static TextStyle appname = TextStyle(
+    fontSize: 20,
+    color: headingColor,
+    fontWeight: FontWeight.w500,
+  );
+
   static TextStyle heading = TextStyle(
     fontSize: 24,
     color: headingColor,

@@ -43,7 +43,7 @@ class _AppbarState extends State<Appbar> {
             children: [
               Text(
                 "Zampa",
-                style: AppTheme.heading,
+                style: AppTheme.appname,
               ),
               Row(
                 children: [
@@ -66,11 +66,17 @@ class _AppbarState extends State<Appbar> {
           Expanded(child: Container()),
           IconButton(
             onPressed: () {},
-            icon: Icon(CupertinoIcons.search),
+            icon: Icon(
+              CupertinoIcons.search,
+              color: Colors.black,
+            ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(CupertinoIcons.bell),
+            icon: Icon(
+              CupertinoIcons.bell,
+              color: Colors.black,
+            ),
           ),
           Container(
             height: 34,

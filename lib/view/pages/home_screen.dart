@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppTheme.backGroundColor,
       body: SafeArea(
-        child: ListView(          
+        child: ListView(
           scrollDirection: Axis.vertical,
           padding: EdgeInsets.all(15.0),
           children: [
@@ -37,11 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
               "Events",
               style: AppTheme.heading,
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10),
             Event(),
-            SizedBox(height: 20),
             Expand(event: "Popular Event", expand: () {}),
-            SizedBox(height: 20),
             PopularEvent(),
             SizedBox(height: 20),
             PremiumContainer(),
@@ -50,7 +48,6 @@ class _HomeScreenState extends State<HomeScreen> {
             Freeevent(),
             SizedBox(height: 20),
             Expand(event: "Watched Event", expand: () {}),
-            SizedBox(height: 20),
             Watchedevent(),
             SizedBox(height: 20),
             Row(

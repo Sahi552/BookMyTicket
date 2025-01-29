@@ -18,7 +18,7 @@ class Event extends StatelessWidget {
           children: [
             Events(
               eventImage: Assest.event1,
-              eventText: "Comedy \nshows",
+              eventText: "Comedy shows",
               gratient1: Color(0xff9747FF),
               gratient2: Color(0xffAD6FA6),
               gratient3: Color(0xffC67D93),
@@ -26,29 +26,29 @@ class Event extends StatelessWidget {
             ),
             Events(
               eventImage: Assest.event2,
-              eventText: "Music \nconcert",
+              eventText: "Music concert",
               gratient1: Color(0xff40D169),
               gratient2: Color(0xff6FADA7),
               gratient3: Color(0xff8FDDD0),
-              offset: Offset(3, -16),
+              offset: Offset(-2, -16),
             ),
             Events(
               eventImage: Assest.event3_2,
-              eventText: "DJ \nnights",
+              eventText: "DJ nights",
               gratient1: Color(0xff9747FF),
               gratient2: Color(0xffAD6FA6),
               gratient3: Color(0xffC67D93),
-              offset: Offset(3, -23),
+              offset: Offset(-15, -23),
               eventoptional: true,
               optional: Assest.event3_1,
             ),
             Events(
               eventImage: Assest.event2,
-              eventText: "Music \nconcert",
+              eventText: "Music concert",
               gratient1: Color(0xff40D169),
               gratient2: Color(0xff6FADA7),
               gratient3: Color(0xff8FDDD0),
-              offset: Offset(3, -16),
+              offset: Offset(-2, -16),
             ),
           ],
         ),
@@ -102,18 +102,25 @@ class Events extends StatelessWidget {
               child: Transform.translate(
                 offset: offset,
                 child: Transform.scale(
-                    scale: 1.02,
-                    child: Image.asset(
-                      eventImage,
-                      height: 134,
-                    )),
+                  scale: 1.02,
+                  child: Image.asset(
+                    eventImage,
+                    height: 134,
+                    width: 111,
+                  ),
+                ),
               ),
             ),
           ],
         ),
-        Text(
-          eventText,
-          style: AppTheme.eventText,
+        SizedBox(
+          height: 34,
+          width: 65,
+          child: Text(
+            eventText,
+            style: AppTheme.eventText,
+            textAlign: TextAlign.center,
+          ),
         )
       ],
     );

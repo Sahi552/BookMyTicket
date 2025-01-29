@@ -17,7 +17,7 @@ class Template extends StatelessWidget {
         autoPlayAnimationDuration: Duration(milliseconds: 800),
         autoPlayCurve: Curves.fastOutSlowIn,
         enableInfiniteScroll: true,
-        viewportFraction: 0.8,
+        viewportFraction: 1,
       ),
       items: [
         Container(

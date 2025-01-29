@@ -15,21 +15,21 @@ class Freeevent extends StatelessWidget {
           PopEvents(
             image: Assest.freeevent1,
             concert: "workshop",
-            area: "Bangalore, karnataka",
+            area: "Bangalore, karnataka Workshop",
             month: "Jan",
             date: 29,
           ),
           PopEvents(
             image: Assest.freeevent2,
             concert: "Business ",
-            area: "Bangalore, karnataka",
+            area: "Bangalore, karnataka Workshop",
             month: "feb",
             date: 23,
           ),
           PopEvents(
             image: Assest.freeevent1,
             concert: "Hactive",
-            area: "Bangalore, karnataka",
+            area: "Bangalore, karnataka Workshop",
             month: "feb",
             date: 23,
           )

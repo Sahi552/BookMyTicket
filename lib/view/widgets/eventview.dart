@@ -24,10 +24,10 @@ class PopEvents extends StatelessWidget {
         Stack(
           children: [
             Container(
-              width: 150,
-              height: 200,
+              width: 144,
+              height: 186,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25),
+                borderRadius: BorderRadius.circular(27),
                 image: DecorationImage(
                   image: AssetImage(
                     image,
@@ -63,13 +63,19 @@ class PopEvents extends StatelessWidget {
             )
           ],
         ),
-        Text(
-          concert,
-          style: AppTheme.heading.copyWith(fontSize: 19),
+        SizedBox(
+          width: 100,
+          child: Text(
+            concert,
+            style: AppTheme.eventText.copyWith(fontSize: 15),
+          ),
         ),
-        Text(
-          area,
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w300),
+        SizedBox(
+          width: 117,
+          child: Text(
+            area,
+            style: AppTheme.eventFooter,
+          ),
         ),
       ],
     );

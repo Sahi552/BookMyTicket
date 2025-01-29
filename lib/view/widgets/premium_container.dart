@@ -1,4 +1,5 @@
 import 'package:bookmyticket/utils/assest.dart';
+import 'package:bookmyticket/utils/theme.dart';
 import 'package:flutter/material.dart';
 
 class PremiumContainer extends StatelessWidget {
@@ -28,20 +29,15 @@ class PremiumContainer extends StatelessWidget {
               children: [
                 Text(
                   "Get Premium",
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  style: AppTheme.eventText.copyWith(fontSize: 14),
                 ),
                 RichText(
                   text: TextSpan(
                       text: "50% off for every ",
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.w300),
+                      style: AppTheme.premiumoffer,
                       children: [
                         TextSpan(
-                            text: "ticket's",
-                            style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.deepPurpleAccent))
+                            text: "ticket's", style: AppTheme.premiumhighlights)
                       ]),
                 ),
                 SizedBox(height: 4),
